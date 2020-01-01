@@ -15,10 +15,11 @@ class App extends Component {
        <div className="container">
         <div className="row">
           <div className="col-18 mx-auto col-md-8 mt-4">
-            <h3 className="text-capitalize text-center">ToDo Input</h3>
-
+            <h3 className="text-capitalize text-center">My To Do List</h3>
+            <h6 className="text-capitalize text-center">By Fez</h6>
             <TodoInput />
             <TodoList />
+            {/* <TodoItem /> */}
           </div>
         </div> 
       </div>

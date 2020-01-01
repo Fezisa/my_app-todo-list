@@ -9,13 +9,15 @@ export default class TodoList extends Component {
             <div>
 
             <ul className="list-group my-5"> 
-            <h3 className="text-capitalize text center">todo list</h3> 
+            <TodoItem />
             
+            <h3 className="text-capitalize text center"></h3> 
+            
+            <button type="button" className="btn btn-danger btn-block text-capitalize mt-5">
+                clear list</button>
             </ul>
 
-
-            {/* <h1>Hello From ToDoList App</h1>
-            <TodoItem /> */}
+            
 
         </div>
     );

@@ -12,9 +12,11 @@ export default class TodoInput extends Component {
                  <i className="fas fa-book" />
                </div>
             </div>
-                 <input type="text" className="form-control" placeholder="add to do item" />
-           </div>
-                 <button type="submit"className="btn btn-block btn-primary mt-3">add item</button>
+                 <input type="text" className="form-control" 
+                 placeholder="add to do item" />
+            </div>
+                 <button type="submit" 
+                 className="btn btn-block btn-primary mt-3">add item</button>
          </form>
        </div>
         );
