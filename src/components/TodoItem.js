@@ -4,7 +4,7 @@ export default class TodoItem extends Component {
 
     render() {
 
-const {title} = this.props ;
+const {title,handleDelete,handleEdit} = this.props ;
 
     return( 
         <li className="list-group-item 
@@ -13,12 +13,14 @@ const {title} = this.props ;
              <h6>{title}</h6>
              <div className="todo-icon">
 
-                <span className="mx-2 text-success">
+                <span className="mx-2 text-success" 
+                onClick={handleEdit}>
                 <i className="fas fa-pen" />
                 </span>
-                <span className="mx-2 text-danger">
-                <i className="fas fa-trash" />
 
+                <span className="mx-2 text-danger" 
+                onClick={handleDelete}>
+                <i className="fas fa-trash" />
                 </span>
                 
 
