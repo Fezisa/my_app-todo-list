@@ -26,7 +26,7 @@ class App extends Component {
     const newItem = {
       id: this.state.id,
       title: this.state.item
-      
+
     } ;
 
 console.log(newItem) ;
@@ -41,6 +41,12 @@ console.log(newItem) ;
     });
   };
 
+clearList = () =>{
+  this.setState(
+    {items:[]}
+  )
+}
+
   render() {
     return (
 
@@ -54,7 +60,7 @@ console.log(newItem) ;
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit} />
 
-            <TodoList items={this.state.items} />
+            <TodoList items={this.state.items} clearList={this.clearList} />
 
             {/* <TodoItem /> */}
           </div>
